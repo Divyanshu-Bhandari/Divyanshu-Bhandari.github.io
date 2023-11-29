@@ -1,165 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divyanshu Bhandari - Portfolio</title>
-    <Style>
-        /* Reset some default styles */
-body, h1, h2, p {
-    margin: 0;
-    padding: 0;
-}
-
-/* Basic styling for the entire page */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-}
-
-/* Header styles */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.nav-links ul {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin-right: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #66c2ff;
-}
-
-/* Section styles */
-.section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 40px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.section h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.section p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-/* Portfolio item styles */
-.portfolio-item {
-    margin-bottom: 40px;
-}
-
-.portfolio-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.portfolio-item h2 {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 14px;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divyanshu Bhandari | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff; /* Fresh light blue background */
     }
+
     header {
-        padding: 10px 0;
+      background-color: #4caf50; /* Fresh green color */
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
     }
-    nav {
-        justify-content: center;
-    }
-    .logo {
-        font-size: 20px;
-    }
-    .nav-links ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    .nav-links li {
-        margin: 10px 0;
-    }
-}
 
-    </Style>
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0;
+      font-weight: bold;
+      color: #333; /* Dark text color */
+    }
+
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+      border-radius: 10px;
+      animation: fadeInUp 1s ease; /* Added animation to the section */
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      color: #555; /* Slightly darker text color */
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #0056b3;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Animation */
+    .animated {
+      animation-fill-mode: both;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Social media icons */
+    .social-icons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .social-icons i {
+      font-size: 2rem;
+      margin: 10px;
+      transition: color 0.3s;
+      color: #555; /* Slightly darker icon color */
+    }
+
+    .social-icons i:hover {
+      color: #4caf50; /* Fresh green color on hover */
+    }
+
+    /* Additional styling for the contact details */
+    .contact-details {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #ecf4fb; /* Light blue background */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      animation: fadeInUp 1s ease;
+    }
+
+    /* Styling for the career objective, education, and other details */
+    .details-section {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #fff; /* White background */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      animation: fadeInUp 1s ease;
+    }
+
+    /* Styling for skills */
+    .skills-section {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #ecf4fb; /* Light blue background */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      animation: fadeInUp 1s ease;
+    }
+
+    /* Styling for the footer */
+    footer {
+      background-color: #333; /* Dark background color for the footer */
+      color: #fff; /* White text color */
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Divyanshu Bhandari</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Divyanshu Bhandari</h1>
+  </header>
+  
+  <!-- Contact Details Section -->
+  <section class="details-section animated fadeInUp">
+    <p>Address: 1 Guru Road, Patel Nagar, Dehradun, Uttarakhand</p>
+    <p>Phone: +91 9084407271</p>
+    <p>Email: Divyanshubhandari04@gmail.com</p>
+    <p>LinkedIn: <a href="www.linkedin.com/in/divyanshu-bhandari/" target="_blank">www.linkedin.com/in/divyanshu-bhandari/</a></p>
+  </section>
 
-    <section id="about" class="section">
-        <h1>About Me</h1>
-        <p>Hello! I am a B.Tech Computer Science student with a passion for coding and technology. I love to build cool web applications and explore new programming languages.</p>
-    </section>
+  <!-- Career Objective, Education, and Other Details Section -->
+  <section class="details-section animated fadeInUp">
+    <h2>Career Objective</h2>
+    <p>Seeking a rewarding career opportunity in an esteemed IT company where I can harness my technical expertise and contribute effectively to the organization's goals. Eager to be part of a dynamic team and apply my skills to deliver innovative solutions that drive the company's success and growth in the tech industry.</p>
 
+    <h2>Education Qualification</h2>
+    <ul>
+      <li>Pursuing bachelor’s in technology in Computer Science and Engineering from Graphic Era Hill University (Expected Graduation: 2025).</li>
+      <li>Intermediate from Shri Guru Ram Rai Public School in 2021.</li>
+      <li>High School from Shri Guru Ram Rai Public School in 2019.</li>
+    </ul>
 
-    <section id="contact" class="section">
-        <h1>Contact Me</h1>
-        <p>Feel free to reach out to me:</p>
-        <ul>
-            <li>Email: Divyanshubhandari04@gmail.com</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/divyanshu-bhandari" target="_blank">LinkedIn Profile</a></li>
-            <li>GitHub: <a href="https://github.com/Divyanshu-Bhandari" target="_blank">GitHub Profile</a></li>
-        </ul>
-    </section>
+    <h2>Coursework</h2>
+    <ul>
+      <li>Data Structure and Algorithm</li>
+      <li>Operating System</li>
+      <li>Database Management System (DBMS)</li>
+      <li>Computer Networks</li>
+      <li>Software Engineering</li>
+      <li>Object Oriented Programming (OOP)</li>
+      <li>Machine Learning & Artificial Intelligence</li>
+    </ul>
 
-    <footer>
-        <p>&copy; 2023 Divyanshu Bhandari</p>
-    </footer>
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming Languages: C, C++, Java, Python, JavaScript</li>
+      <li>Web Technology: HTML, CSS, React.js, Node.js, Bootstrap, Django, GIT, UI</li>
+      <li>IDE Tools: Visual Studio Code, Eclipse, Code Blocks</li>
+      <li>DBMS: MySQL, Oracle, SQLite</li>
+      <li>Operating System: Windows, Linux</li>
+    </ul>
 
-    <script src="script.js"></script>
+  </section>
+
+  <!-- Social media icons and other sections go here -->
+
+  <!-- Footer Section -->
+  <footer>
+    &copy; 2023 Divyanshu Bhandari | Portfolio
+  </footer>
 </body>
 </html>
